@@ -21,7 +21,7 @@ const newRestaurant = ref<Restaurant>({
     <div class="columns">
       <SideMenu />
       <div class="column">
-        <nav class="breadcrumb">
+        <nav class="breadcrumb mb-5">
           <ul>
             <li><router-link to="/restaurants">Restaurants</router-link></li>
             <li class="is-active"><a href="#">New Restaurant</a></li>

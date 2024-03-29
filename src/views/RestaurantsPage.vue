@@ -26,7 +26,9 @@ const filteredRestaurants = computed(() => {
       <!-- Side Menu -->
       <SideMenu />
       <div class="column">
-        <h1 class="title">Restaurants</h1>
+        <div class="mb-5">
+          <h1 class="title">Restaurants</h1>
+        </div>
         <!-- CTA Bar -->
         <nav class="level">
           <div class="level-left">
@@ -36,20 +38,24 @@ const filteredRestaurants = computed(() => {
               </p>
             </div>
 
-            <p class="level-item">
-              <router-link to="/restaurants/new" class="button is-success">New</router-link>
-            </p>
-
             <div class="level-item is-hidden-tablet-only">
               <div class="field has-addons">
                 <p class="control">
-                  <input class="input" type="text" placeholder="Restaurant name" v-model="filterText" />
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="Restaurant name"
+                    v-model="filterText"
+                  />
                 </p>
                 <p class="control">
                   <button class="button">Search</button>
                 </p>
               </div>
             </div>
+            <p class="level-item">
+              <router-link to="/restaurants/new" class="button is-success">New</router-link>
+            </p>
           </div>
 
           <div class="level-right">

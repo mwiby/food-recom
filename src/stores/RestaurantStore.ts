@@ -7,6 +7,13 @@ export const useRestaurantStore = defineStore({
   state: () => ({
     list: useStorage('toeat-restaurant-list', [
       {
+        id: '1f295ce4-d7fc-4d00-af1d-6cb1637c6bn1',
+        name: 'T.G.I.Fridays',
+        address: 'Biskop Gunnerus gate 3',
+        website: 'https://fridays.no/',
+        status: 'Want to Try'
+      },
+      {
         id: '9f995ce4-d2fc-4d00-af1d-6cb1647c6bd3',
         name: 'Cartels',
         address: 'Henrik Ibsens gate 90',

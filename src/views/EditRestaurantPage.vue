@@ -12,7 +12,7 @@ const route = useRoute()
 
 const status = ref<StatusResponse>({
   status: '',
-  message: '',
+  message: ''
 })
 
 const currentRestaurant = computed(() => {
@@ -24,7 +24,7 @@ const updatedRestaurant = reactive<Restaurant>({
   name: '',
   address: '',
   website: '',
-  status: 'Want to Try',
+  status: 'Want to Try'
 })
 
 const updateRestaurant = () => {
@@ -72,7 +72,9 @@ onMounted(() => {
               <div class="control">
                 <div class="select">
                   <select v-model="updatedRestaurant.status">
-                    <option v-for="status in restaurantStatusList" :value="status">{{ status }}</option>
+                    <option v-for="status in restaurantStatusList" :value="status" :key="status">
+                      {{ status }}
+                    </option>
                   </select>
                 </div>
               </div>

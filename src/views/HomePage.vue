@@ -8,11 +8,13 @@
           <div class="columns is-vcentered reverse-columns">
             <div class="column is-10-mobile is-10-tablet is-5-desktop is-5-widescreen is-5-fullhd">
               <h1 class="title titled is-1 mb-6">
-                Helping people track all the delicious things they want to eat.
+                Find your food culinary desires or give recommendations!
               </h1>
               <div class="buttons">
-                <router-link to="/restaurants" class="button is-primary">See all food</router-link>
-                <router-link to="/restaurants/new" class="button">Add new food</router-link>
+                <router-link to="/restaurants" class="button is-primary">
+                  See all restaurants
+                </router-link>
+                <router-link to="/restaurants/new" class="button">Add new</router-link>
               </div>
             </div>
             <div
